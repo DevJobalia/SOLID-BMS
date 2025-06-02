@@ -1,8 +1,6 @@
 Great — you're now at the ideal stage to design a system that’s clean, maintainable, and extensible.
 
-Since you're asking **how to break down the problem and follow SOLID principles in Java**, here’s a **step-by-step guide** — **no code**, just the right mindset and structure.
-
----
+## Since you're asking **how to break down the problem and follow SOLID principles in Java**, here’s a **step-by-step guide** — **no code**, just the right mindset and structure.
 
 ## 🔧 Step 1: Identify Core Entities (from Use Case Diagram)
 
@@ -86,15 +84,45 @@ Example:
 
 ## ✅ Final Checklist
 
-| Design Concern                                     | Covered? |
-| -------------------------------------------------- | -------- |
-| One class = one reason to change? (SRP)            | ✅       |
-| Can I extend this without touching old code? (OCP) | ✅       |
-| Do subclasses behave like base class? (LSP)        | ✅       |
-| Am I depending on interfaces, not concrete? (DIP)  | ✅       |
-| Are classes loosely coupled and highly cohesive?   | ✅       |
-| Can logic be tested independently?                 | ✅       |
+1. [x]✅ FIRST GET ALL REQUIREMENT FROM INTERVIEWER
 
----
+   1. FUNC
+      1. STREAM
+      2. DOWNLOAD
+      3. UPLOAD
+   2. NON FUNC
+      1. SCALE TO 100M
+      2. PAUSABLE - 8GB UPLOADED AND PAUSE, AND RESTART FROM WHERE STOPED
+      3. LOW LATENCY STREAMS
 
-Would you like a breakdown of **how to start** designing `BookingService` using these principles next?
+2. [x]✅ USE CASE DIAGRAM (ACTOR)
+3. [x]✅ ACTIVITY DIAGRAM - IT MULTIPLE API, UML DIAGRAM
+4. DESIGN CORE ENTITIES AND CLASSES
+   1. MOST OF FUNC REQUIREMENT NOUNS AND VERBS WILL BE CONVERTED TO CLASSES
+   2. E.G. PARKING LOT
+      1. SUPPORT MULITPE PARKING FLOORS / LEVELS
+      2. EACH FLOOR CAN HAVE MULTIPLE PARKING LOT
+      3. EVERY INCOMING CAN BE ALLOTED FREE PARKING SLOT
+      4. SUPPORT MULTIPLE VEHICLE TYPES
+      5. PAYMENTS SHOULD BE COMPLETED AT EXIT
+      6. NOUNS BECOMES CLASSES
+5. WRITE CODE - JUDGED ON:
+
+   1. CORRECTNES
+   2. SCALABLE TO FEATURES / ENTENSIBLE
+   3. READABLE
+   4. MAINTAINABLE
+   5. LESS COMPLEX
+   6. REUSABLE
+   7. KEEP CODE MODULAR & LOOSLY COUPLED TO ACHIEVE ABOVE
+
+   | Design Concern                                     | Covered? |
+   | -------------------------------------------------- | -------- |
+   | One class = one reason to change? (SRP)            | ✅       |
+   | Can I extend this without touching old code? (OCP) | ✅       |
+   | Do subclasses behave like base class? (LSP)        | ✅       |
+   | Am I depending on interfaces, not concrete? (DIP)  | ✅       |
+   | Are classes loosely coupled and highly cohesive?   | ✅       |
+   | Can logic be tested independently?                 | ✅       |
+
+6. WRITE SOME TESTING LOGIC FOR ALL FEATURES / USECASE ⇒ CHECK EXPECTED OUTPUT CAN BE PRINTED, CAN ALSO USE JUNIT. IF DB REQUIRED USE FILESYSTEM
