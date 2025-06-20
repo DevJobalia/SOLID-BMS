@@ -8,15 +8,12 @@ com.bms
 │
 ├── domain                  # Core business logic
 │   ├── model              # Entities (POJOs with logic)
-│   │   ├── Movie
-│   │   ├── Seat
-│   │   |── Booking
+|   │   ├── Booking.java
 |   │   ├── Movie.java
+|   │   ├── Seat.java
 |   │   ├── Theatre.java
 |   │   ├── Screen.java
-|   │   ├── Seat.java
-|   │   ├── Show.java
-|   │   └── Booking.java
+|   │   └── Show.java
 │   ├── service            # Domain services, if needed
 |   │   ├── SearchService.java
 |   │   ├── BookingService.java
