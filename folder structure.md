@@ -1,22 +1,12 @@
 ```
 com.bms
 ├── application              # Use case orchestration layer
-│   ├── dto                 # Request/Response objects
 │   └── service             # Interfaces + application service classes
 │       ├── BookingService
 │       └── SearchService
 │
 ├── domain                  # Core business logic
-│   ├── model              # Entities (POJOs with logic)
-|   │   ├── Booking.java
-|   │   ├── Movie.java
-|   │   ├── Seat.java
-|   │   ├── Theatre.java
-|   │   ├── Screen.java
-|   │   └── Show.java
 │   ├── service            # Domain services, if needed
-|   │   ├── SearchService.java
-|   │   ├── BookingService.java
 |   │   ├── PaymentService.java
 |   │   └── AdminService.java
 │   └── exception          # Custom domain exceptions
