@@ -9,14 +9,6 @@ com.bms
 |   │   ├── BookingRepository.java
 |   │   └── SeatLockProvider.java
 │   ├── payment            # Payment integrations (UPI/NetBanking)
-│
-├── strategy                # Behavior/Policy pattern logic
-│   ├── SearchStrategy
-│   └── PaymentGateway
-│
-|── BmsPortalApplication.java  # Main entry (SpringBootApplication or CLI entry)
-└── utils/                   # ← Helpers / validators
-    └── DateUtils.java
 
 ```
 
