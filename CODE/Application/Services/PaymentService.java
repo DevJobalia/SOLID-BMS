@@ -1,4 +1,4 @@
-package CODE.Domain.Services;
+package CODE.Application.Services;
 
 public class PaymentService {
     

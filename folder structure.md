@@ -4,13 +4,14 @@ com.bms
 │   ├── dto                 # Request/Response objects
 │   └── service             # Interfaces + application service classes
 │       ├── BookingService
+|       ├── PaymentService.java
 │       └── SearchService
 │
 ├── domain                  # Core business logic
+│   ├── payment
+|   │   ├── APaymentMode.java
+|   │   └── PaymentResult.java
 │   ├── model              # Entities (POJOs with logic)
-│   │   ├── Movie
-│   │   ├── Seat
-│   │   |── Booking
 |   │   ├── Movie.java
 |   │   ├── Theatre.java
 |   │   ├── Screen.java
@@ -21,7 +22,6 @@ com.bms
 │   ├── service            # Domain services, if needed
 |   │   ├── SearchService.java
 |   │   ├── BookingService.java
-|   │   ├── PaymentService.java
 |   │   └── AdminService.java
 │   └── exception          # Custom domain exceptions
 │       ├── SeatAlreadyBookedException.java
@@ -35,6 +35,8 @@ com.bms
 |   │   ├── BookingRepository.java
 |   │   └── SeatLockProvider.java
 │   ├── payment            # Payment integrations (UPI/NetBanking)
+|   │   ├── UpiPayment.java
+|   │   ├── NetBanking.java
 │   └── config             # Spring or project configs
 │
 ├── interface               # Web/API layer

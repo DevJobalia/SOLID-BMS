@@ -5,10 +5,12 @@
 # 20/6/2025
 
 12:20am - create files and folder structure
+3PM
 
 - define variables
-- IF PAYMENT STATUS COMPLETE SHOULD WE CONSIDER, ADDING ONE MORE PROVIDING DETAIL ABOUT PAYMENT INDICATED BY PAYMENTRESULT USE IF BY MAINTAINING SOLID PRINCIPLES AS NOT ALL BOOKING ARE SAME
-  - CREATE DIFFERENT TYPES OF BOOKING BASED OF STAGE
+
+7:20 -
+
 - WHERE TO STORE ALL USER. IN ADMIN
   - user manager
 - define payment modes
@@ -20,3 +22,7 @@
   - seat and show
   - user AND BOOKING
 - implement functions
+- remove moving parts related to payment (in booking, user, refund)
+  - defining status
+  - storing result
+  - updating refunds
