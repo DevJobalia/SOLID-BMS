@@ -1,19 +1,5 @@
 ```
 com.bms
-│
-├── infrastructure          # External implementations
-│   ├── repository         # JPA/DB-specific implementations
-│   │   └── MovieRepositoryImpl
-│   ├── MovieRepository.java
-|   │   ├── InMemoryMovieRepository.java
-|   │   ├── BookingRepository.java
-|   │   └── SeatLockProvider.java
-│   ├── payment            # Payment integrations (UPI/NetBanking)
-
-```
-
-```
-com.bms
 ├── application              # Use case orchestration layer
 │   ├── dto                 # Request/Response objects
 │   └── service             # Interfaces + application service classes
