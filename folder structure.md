@@ -1,17 +1,5 @@
 ```
 com.bms
-├── application              # Use case orchestration layer
-│   └── service             # Interfaces + application service classes
-│       ├── BookingService
-│       └── SearchService
-│
-├── domain                  # Core business logic
-│   ├── service            # Domain services, if needed
-|   │   ├── PaymentService.java
-|   │   └── AdminService.java
-│   └── exception          # Custom domain exceptions
-│       ├── SeatAlreadyBookedException.java
-|       └── PaymentFailedException.java
 │
 ├── infrastructure          # External implementations
 │   ├── repository         # JPA/DB-specific implementations
@@ -21,11 +9,6 @@ com.bms
 |   │   ├── BookingRepository.java
 |   │   └── SeatLockProvider.java
 │   ├── payment            # Payment integrations (UPI/NetBanking)
-│   └── config             # Spring or project configs
-│
-├── interface               # Web/API layer
-│   ├── controller         # REST APIs or web handlers
-│   └── mapper             # Map DTOs to domain objects
 │
 ├── strategy                # Behavior/Policy pattern logic
 │   ├── SearchStrategy
