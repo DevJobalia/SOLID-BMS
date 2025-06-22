@@ -15,10 +15,8 @@
   - user and booking
   - show and seat
 - check for cyclic relation
-  - DEFINE USER MANAGER FOR PREVENTING CYCLIC REF
   - show and movie
   - seat and show
-  - user AND BOOKING
 - FOR ALL ENTITIES CHECK THIS
   - DEFINE ALL FUNCTION
   - implement functions & 2. ADMIN OPS REQUIRE PASSING PASSWORD
@@ -44,3 +42,4 @@
 - FUTURE SCOPE
 
 1. BUILDER PATTERN FOR USER
+2. command design pattern for user manager
