@@ -21,4 +21,8 @@ public class Movie {
         return shows;
 
     }
+
+    public String getId(){
+        return movieID;
+    }
 }
