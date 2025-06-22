@@ -1,7 +1,10 @@
 package CODE.Domain.Model.User;
 
+import CODE.Domain.Services.AdminService;
+
 public class Admin extends AUser {
     private final String password;
+    public AdminService adminManager = new AdminService(null);
 
     private Admin(AdminBuilder builder) {
         super(builder.userID, builder.name, builder.email);
@@ -54,7 +57,5 @@ public class Admin extends AUser {
     // Example getter
     public String getPassword() {
         return password;
-    }
-
-    // TODO: Add domain-specific methods
+    }    
 }
