@@ -11,12 +11,6 @@
 
 # 20/6/2025
 
-- missing relation
-  - user and booking
-  - show and seat
-- check for cyclic relation
-  - show and movie
-  - seat and show
 - FOR ALL ENTITIES CHECK THIS
   - DEFINE ALL FUNCTION
   - implement functions & 2. ADMIN OPS REQUIRE PASSING PASSWORD
@@ -41,5 +35,15 @@
 
 - FUTURE SCOPE
 
-1. BUILDER PATTERN FOR USER
-2. command design pattern for user manager
+1. MANAGE FOR MULTIPLE RELATION
+
+- seat and show
+
+2. MANAGE for cyclic relation
+
+- show and movie
+- SHOW AND BOOKING
+
+3. BUILDER PATTERN FOR USER
+4. command design pattern for user manager
+5. IMPROVE SEAT DEFINATION LOGIC OF THEATRE- BASED OF FACTORY PATTERN
