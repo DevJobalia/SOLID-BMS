@@ -22,11 +22,7 @@ class App {
         
         flow1(movieRepository, admin, adminService);
 
-        Theatre t1 = new Theatre("T001", "PVR Inox", "Mumbai", new ArrayList<>());
-        theatreRepo.save(t1);
-
-Optional<Theatre> found = theatreRepo.findById("T001");
-found.ifPresent(theatre -> System.out.println("Found: " + theatre.getTheatreID()));
+        
 
     }    
 
@@ -46,9 +42,26 @@ found.ifPresent(theatre -> System.out.println("Found: " + theatre.getTheatreID()
         adminService.addMovie(admin, inception);
 
         // 4. GET LIST OF ALL MOVIE
-        adminService.getAllMovie(admin);
+        System.out.println("getting all movies");
+        for(Movie movie : adminService.getAllMovie(admin)){
+            System.out.println("* " + movie.getTitle());
+
+        }
         // 5. UPDATE MOVIE
-        // 6. DELETE MOVIE
-        // 7. SET MOVIE TO SHOW / SCREEN / THEATRE        
+        // 6. DELETE MOVIE        
+    }
+
+    public static void flow2(TheatreRepository theatreRepo){
+        // -- THEATRE FLOW
+        // 1. create theatre repo
+        // 2. create theatre
+        Theatre t1 = new Theatre("T001", "PVR Inox", "Mumbai", new ArrayList<>());
+        theatreRepo.save(t1);
+        // 3. FIND ONE THEATRE
+        Optional<Theatre> found = theatreRepo.findById("T001");
+        found.ifPresent(theatre -> System.out.println("Found: " + theatre.getTheatreID()));
+        // 4. add screens
+        // 5. set movies for a show
+        // 6. set show on a screen
     }
 }

@@ -1,5 +1,7 @@
 package CODE.Domain.Services;
 
+import java.util.List;
+
 import CODE.Domain.Exceptions.UserHasNoAdminRightsException;
 import CODE.Domain.Model.Movie;
 import CODE.Domain.Model.User.AUser;
@@ -22,6 +24,12 @@ public class AdminService {
     public void addMovie(AUser user, Movie movie) {
         validateAdmin(user);
         movieRepository.save(movie);
+    }
+
+    public List<Movie> getAllMovie(AUser user) {
+        validateAdmin(user);
+        
+        return movieRepository.findAll();
     }
 
     // Future: add deleteMovie, updateShow, etc. with similar validation
