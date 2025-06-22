@@ -1,6 +1,9 @@
 package CODE.Domain.Services;
 
+import CODE.Domain.Exceptions.UserHasNoAdminRightsException;
 import CODE.Domain.Model.Movie;
+import CODE.Domain.Model.User.AUser;
+import CODE.Domain.Model.User.Admin;
 import CODE.Infrastructure.Repository.MovieRepository.MovieRepository;
 
 public class AdminService {
@@ -10,9 +13,16 @@ public class AdminService {
         this.movieRepository = movieRepository;
     }
 
-    public void addMovie(Movie movie) {
+    private void validateAdmin(AUser user) {
+        if (!(user instanceof Admin)) {
+            throw new UserHasNoAdminRightsException("Access denied: User is not an admin.");
+        }
+    }
+
+    public void addMovie(AUser user, Movie movie) {
+        validateAdmin(user);
         movieRepository.save(movie);
     }
 
-    // More functions like deleteMovie, updateShow etc.
+    // Future: add deleteMovie, updateShow, etc. with similar validation
 }

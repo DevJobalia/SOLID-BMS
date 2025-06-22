@@ -4,13 +4,11 @@ import CODE.Domain.Services.AdminService;
 import CODE.Infrastructure.Repository.MovieRepository.MovieRepository;
 
 public class Admin extends AUser {
-    private final String password;
-    public AdminService adminService;
+    private final String password;    
 
     private Admin(AdminBuilder builder) {
         super(builder.userID, builder.name, builder.email);
-        this.password = builder.password;
-        this.adminService = new AdminService(builder.movieRepo);
+        this.password = builder.password;        
     }
 
     public static class AdminBuilder {
@@ -23,11 +21,10 @@ public class Admin extends AUser {
         // Optional
         private String name;
 
-        public AdminBuilder(MovieRepository movieRepo, String userID, String email, String password) {
+        public AdminBuilder(String userID, String email, String password) {
             this.userID = userID;
             this.email = email;
             this.password = password;
-            this.movieRepo = movieRepo;
         }
 
         public AdminBuilder setUserID(String _id) {
