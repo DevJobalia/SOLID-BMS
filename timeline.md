@@ -11,26 +11,23 @@
 
 # 20/6/2025
 
-3. DEFINE DAO, REPO FOR STORING USER IN MEMORY
-4. DEFINE ALL FUNCTION
-5. DEFINE USER MANAGER FOR PREVENTING CYCLIC REF
-6. DEFINE USER SERVICE, admin service
-
-- ADD USER
-- DELETE USER
-- GET ALL USER
-- UPDATE USER
-- SEARCH SERVICE
-
 - missing relation
   - user and booking
   - show and seat
 - check for cyclic relation
+  - DEFINE USER MANAGER FOR PREVENTING CYCLIC REF
   - show and movie
   - seat and show
   - user AND BOOKING
+- FOR ALL ENTITIES CHECK THIS
+  - DEFINE ALL FUNCTION
+  - implement functions & 2. ADMIN OPS REQUIRE PASSING PASSWORD
+  - DEFINE USER SERVICE, admin service
+    - ADD USER
+    - DELETE USER
+    - GET ALL USER
+    - UPDATE USER
 - COMPLETE SEARCH CODE
-- implement functions & 2. ADMIN OPS REQUIRE PASSING PASSWORD
 - remove moving parts related to payment (in booking, user, refund)
   - defining status
   - storing result
