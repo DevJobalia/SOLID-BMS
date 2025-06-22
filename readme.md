@@ -30,3 +30,8 @@ Select seats
 Lock seats during booking to avoid race conditions
 
 Confirm booking
+
+# CODING CONSIDERATIONS
+
+1. BUILDER DESIGN PATTERN
+2. COMMAND PATTERN FOR SERVICES
