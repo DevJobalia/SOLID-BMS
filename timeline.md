@@ -4,14 +4,13 @@
 12:20am - create files and folder structure
 3PM - define variables
 
-# 20/6/2025
-
 1. USER INTERFACE
 
 - USER
 - ADMIN
 
-2. ADMIN OPS REQUIRE PASSING PASSWORD
+# 20/6/2025
+
 3. DEFINE DAO, REPO FOR STORING USER IN MEMORY
 4. DEFINE ALL FUNCTION
 5. DEFINE USER MANAGER FOR PREVENTING CYCLIC REF
@@ -31,7 +30,7 @@
   - seat and show
   - user AND BOOKING
 - COMPLETE SEARCH CODE
-- implement functions
+- implement functions & 2. ADMIN OPS REQUIRE PASSING PASSWORD
 - remove moving parts related to payment (in booking, user, refund)
   - defining status
   - storing result
