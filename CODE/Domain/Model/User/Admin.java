@@ -1,14 +1,16 @@
 package CODE.Domain.Model.User;
 
 import CODE.Domain.Services.AdminService;
+import CODE.Infrastructure.Repository.MovieRepository.MovieRepository;
 
 public class Admin extends AUser {
     private final String password;
-    public AdminService adminManager = new AdminService(null);
+    public AdminService adminService;
 
     private Admin(AdminBuilder builder) {
         super(builder.userID, builder.name, builder.email);
         this.password = builder.password;
+        this.adminService = new AdminService(builder.movieRepo);
     }
 
     public static class AdminBuilder {
@@ -16,14 +18,16 @@ public class Admin extends AUser {
         private String userID;
         private String email;
         private String password;
+        private MovieRepository movieRepo;
 
         // Optional
         private String name;
 
-        public AdminBuilder(String userID, String email, String password) {
+        public AdminBuilder(MovieRepository movieRepo, String userID, String email, String password) {
             this.userID = userID;
             this.email = email;
             this.password = password;
+            this.movieRepo = movieRepo;
         }
 
         public AdminBuilder setUserID(String _id) {
