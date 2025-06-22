@@ -13,6 +13,7 @@ import CODE.Infrastructure.Repository.TheatreRepository.*;
 
 class App {
     public static void main(String[] args) {        
+        System.out.println("START");
         MovieRepository movieRepository = new MovieRepository();
         ITheatreRepository theatreRepo = new TheatreRepository();
 
@@ -45,6 +46,7 @@ found.ifPresent(theatre -> System.out.println("Found: " + theatre.getTheatreID()
         adminService.addMovie(admin, inception);
 
         // 4. GET LIST OF ALL MOVIE
+        adminService.getAllMovie(admin);
         // 5. UPDATE MOVIE
         // 6. DELETE MOVIE
         // 7. SET MOVIE TO SHOW / SCREEN / THEATRE        

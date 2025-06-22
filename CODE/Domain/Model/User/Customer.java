@@ -11,7 +11,7 @@ public class Customer extends AUser{
     private List<Booking> bookings; // all bookings - saved, cancelled, refunded
     private List<PaymentResult>  successfullBookings;
 
-    private Customer(String userID, String name, String email) {
+    public Customer(String userID, String name, String email) {
         super(userID, name, email);
     }
 
